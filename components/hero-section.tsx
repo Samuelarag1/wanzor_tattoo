@@ -1,18 +1,21 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { ChevronDown } from "lucide-react"
+import { useEffect, useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 export function HeroSection() {
-  const [loaded, setLoaded] = useState(false)
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoaded(true), 300)
-    return () => clearTimeout(timer)
-  }, [])
+    const timer = setTimeout(() => setLoaded(true), 300);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="inicio"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Film grain overlay */}
       <div
         className="pointer-events-none absolute inset-0 z-20 opacity-[0.03]"
@@ -38,7 +41,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           src="/images/hero-mejorar.jpeg"
-          alt="Wanzo Tatt trabajando"
+          alt="Wanzor Tatt trabajando"
           className={`h-full w-full object-cover object-top transition-all duration-[2000ms] ${
             loaded ? "scale-100 opacity-40" : "scale-110 opacity-0"
           }`}
@@ -94,5 +97,5 @@ export function HeroSection() {
         <ChevronDown className="h-5 w-5 text-muted-foreground animate-bounce" />
       </div>
     </section>
-  )
+  );
 }

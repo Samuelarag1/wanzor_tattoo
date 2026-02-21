@@ -1,24 +1,24 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
   { label: "Mentoria", href: "#mentoria" },
   { label: "Servicios", href: "#servicios" },
   { label: "Contacto", href: "#contacto" },
-]
+];
 
 export function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileOpen, setIsMobileOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50)
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav
@@ -29,8 +29,11 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#inicio" className="font-heading text-2xl font-bold tracking-wider text-foreground uppercase">
-          Wanzo Tatt
+        <a
+          href="#inicio"
+          className="font-heading text-2xl font-bold tracking-wider text-foreground uppercase"
+        >
+          Wanzor Tatt
         </a>
 
         {/* Desktop Nav */}
@@ -87,5 +90,5 @@ export function Navbar() {
         </div>
       )}
     </nav>
-  )
+  );
 }

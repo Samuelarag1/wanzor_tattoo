@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { Instagram } from "lucide-react"
+import { Instagram } from "lucide-react";
 
 export function Footer() {
   return (
@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
           <div className="text-center md:text-left">
             <p className="font-heading text-xl font-bold uppercase tracking-wider text-foreground">
-              Wanzo Tatt
+              Wanzor Tatt
             </p>
             <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
               Tatuajes Profesionales
@@ -27,10 +27,10 @@ export function Footer() {
           </div>
 
           <p className="text-xs text-muted-foreground">
-            {"Wanzo Tatt. Todos los derechos reservados."}
+            {"Wanzor Tatt. Todos los derechos reservados."}
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
