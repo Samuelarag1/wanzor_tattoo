@@ -7,12 +7,17 @@ import { siteConfig } from "@/lib/site"
 
 const aboutImages = [
   {
-    src: siteConfig.heroImage,
+    src: '/me.png',
     alt: "Wanzor Tatt trabajando en su consultoria para tatuadores",
     caption: "Mentoria enfocada en posicionamiento, criterio y crecimiento real.",
   },
   {
-    src: siteConfig.secondaryImage,
+    src: '/profile-2.png',
+    alt: "Wanzor Tatt tatuando y desarrollando su marca personal",
+    caption: "Experiencia real dentro del oficio, no teoria vacia.",
+  },
+  {
+    src: '/tattoo.jpeg',
     alt: "Wanzor Tatt tatuando y desarrollando su marca personal",
     caption: "Experiencia real dentro del oficio, no teoria vacia.",
   },

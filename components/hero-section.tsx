@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import { ChevronDown } from "lucide-react"
-import { siteConfig } from "@/lib/site"
+
+const heroImageSrc = "/hero.PNG"
 
 export function HeroSection() {
   const [loaded, setLoaded] = useState(false)
@@ -39,12 +40,12 @@ export function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={siteConfig.heroImage}
+          src={heroImageSrc}
           alt="Wanzor Tatt trabajando en su posicionamiento profesional para tatuadores"
           fill
           priority
           sizes="100vw"
-          className={`h-full w-full object-cover object-top transition-all duration-[2000ms] ${
+          className={`h-full w-full object-cover object-top md:object-center transition-all duration-[2000ms] ${
             loaded ? "scale-100 opacity-40" : "scale-110 opacity-0"
           }`}
         />

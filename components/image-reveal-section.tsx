@@ -2,10 +2,10 @@
 
 import Image from "next/image"
 import { useScrollReveal } from "@/hooks/use-scroll-reveal"
-import { siteConfig } from "@/lib/site"
 
 export function ImageRevealSection() {
   const { ref, isVisible } = useScrollReveal({ threshold: 0.2 })
+  const imageSrc = "/tatuas_bien.PNG"
 
   return (
     <section className="relative py-0 overflow-hidden">
@@ -18,7 +18,7 @@ export function ImageRevealSection() {
           }}
         >
           <Image
-            src={siteConfig.secondaryImage}
+            src={imageSrc}
             alt="Tatuador profesional trabajando mientras desarrolla su marca y su negocio"
             fill
             sizes="100vw"
@@ -36,9 +36,10 @@ export function ImageRevealSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block">Tatuas bien</span>
+            <span className="block text-9xl">Tatuas bien</span>
             <span className="mt-2 block text-lg font-sans font-normal normal-case tracking-wide text-muted-foreground md:text-2xl">
-              {"pero estas donde queres?"}
+    
+              <span className="font-akkurat-strong text-foreground text-2xl text-gray-300">PERO ESTAS DONDE QUERES?</span>
             </span>
           </h2>
         </div>

@@ -3,6 +3,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: 'Akkurat';
+  src: url('/fonts/Akkurat.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 :root {
   --background: oklch(0.05 0 0);
   --foreground: oklch(0.98 0 0);
@@ -176,4 +184,14 @@ html {
 
 .font-heading {
   font-family: var(--font-heading);
+}
+
+.font-akkurat {
+  font-family: 'Akkurat', var(--font-sans);
+}
+
+.font-akkurat-strong {
+  font-family: 'Akkurat', var(--font-sans);
+  font-weight: 800;
+  font-synthesis: weight;
 }

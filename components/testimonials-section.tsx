@@ -32,11 +32,11 @@ const testimonials = [
   },
 ]
 
-const cases = [
-  "Reposicionamiento de marca para tatuadores con nivel tecnico alto pero baja percepcion de valor.",
-  "Mejora del sistema de consultas, seguimiento y cierre para reducir desgaste en mensajes.",
-  "Ajuste de precios y propuesta comercial para atraer clientes con mayor presupuesto y mejor encaje.",
-]
+// const cases = [
+//   "Reposicionamiento de marca para tatuadores con nivel tecnico alto pero baja percepcion de valor.",
+//   "Mejora del sistema de consultas, seguimiento y cierre para reducir desgaste en mensajes.",
+//   "Ajuste de precios y propuesta comercial para atraer clientes con mayor presupuesto y mejor encaje.",
+// ]
 
 export function TestimonialsSection() {
   const { ref, isVisible } = useScrollReveal({ threshold: 0.12 })
@@ -113,7 +113,7 @@ export function TestimonialsSection() {
           ))}
         </div>
 
-        <div className="mt-12 grid gap-4 lg:grid-cols-3">
+        {/* <div className="mt-12 grid gap-4 lg:grid-cols-3">
           {cases.map((item, index) => (
             <div
               key={item}
@@ -125,7 +125,7 @@ export function TestimonialsSection() {
               {item}
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
-import { PainPointsSection } from "@/components/pain-points-section"
+// import { PainPointsSection } from "@/components/pain-points-section"
 import { ImageRevealSection } from "@/components/image-reveal-section"
 import { WhatIDoSection } from "@/components/what-i-do-section"
 import { ServicesSection } from "@/components/services-section"
@@ -56,8 +56,8 @@ export default function Home() {
         <HeroSection />
         <ImageRevealSection />
         <WhatIDoSection />
-        <PainPointsSection />
-        <SeoContentSection />
+        {/* <PainPointsSection /> */}
+        {/* <SeoContentSection /> */}
         <ManifestoSection />
         <ServicesSection />
         <TestimonialsSection />
