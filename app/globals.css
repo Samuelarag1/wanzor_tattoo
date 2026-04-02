@@ -40,7 +40,7 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-inter), 'Inter', sans-serif;
+  --font-sans: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', sans-serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --font-heading: var(--font-oswald), 'Oswald', sans-serif;
   --color-background: var(--background);

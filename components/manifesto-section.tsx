@@ -3,12 +3,14 @@
 import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 const lines = [
-  "Tus tattoos no son el problema.",
-  "El problema es el sistema que los rodea.",
-  "No es cuantos seguidores tenes.",
-  "Es cuantos clientes te escriben.",
-  "No es cuanto cobras.",
-  "Es cuanto vales.",
+  { text: "Tus tattoos no son el problema.", emphasis: false },
+  { text: "El problema es el sistema que los rodea.", emphasis: true },
+  { text: "No es cuantos seguidores tenes.", emphasis: false },
+  { text: "Es cuantos clientes te escriben.", emphasis: true },
+  { text: "No es cuanto cobras.", emphasis: false },
+  { text: "Es cuanto vales.", emphasis: true },
+  { text: "Hay un patron detras de cada resultado.", emphasis: false },
+  { text: "Mejorar no es casualidad.", emphasis: true },
 ]
 
 export function ManifestoSection() {
@@ -31,9 +33,8 @@ export function ManifestoSection() {
   )
 }
 
-function ManifestoLine({ text, index }: { text: string; index: number }) {
+function ManifestoLine({ text, index }: { text: { text: string; emphasis: boolean }; index: number }) {
   const { ref, isVisible } = useScrollReveal({ threshold: 0.3 })
-  const isEmphasized = index % 2 !== 0
 
   return (
     <p
@@ -41,13 +42,13 @@ function ManifestoLine({ text, index }: { text: string; index: number }) {
       className={`transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       } ${
-        isEmphasized
+        text.emphasis
           ? "font-heading text-2xl font-bold uppercase tracking-tight text-accent md:text-4xl"
           : "text-lg text-muted-foreground md:text-xl"
       }`}
       style={{ transitionDelay: `${index * 100}ms` }}
     >
-      {text}
+      {text.text}
     </p>
   )
 }

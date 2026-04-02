@@ -1,6 +1,7 @@
-"use client";
+"use client"
 
-import { Instagram } from "lucide-react";
+import { Instagram } from "lucide-react"
+import { siteConfig } from "@/lib/site"
 
 export function Footer() {
   return (
@@ -9,28 +10,36 @@ export function Footer() {
         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
           <div className="text-center md:text-left">
             <p className="font-heading text-xl font-bold uppercase tracking-wider text-foreground">
-              Wanzor Tatt
+              {siteConfig.brandName}
             </p>
             <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
-              Tatuajes Profesionales
+              Mentoria para Tatuadores
             </p>
           </div>
 
-          <div className="flex items-center gap-6">
-            <a
-              href="#"
-              className="text-muted-foreground transition-colors hover:text-accent"
-              aria-label="Instagram"
-            >
-              <Instagram size={20} strokeWidth={1.5} />
-            </a>
-          </div>
+          {siteConfig.instagramUrl ? (
+            <div className="flex items-center gap-6">
+              <a
+                href={siteConfig.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-accent"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} strokeWidth={1.5} />
+              </a>
+            </div>
+          ) : (
+            <div className="text-xs uppercase tracking-widest text-muted-foreground">
+              Marca, precios y clientes
+            </div>
+          )}
 
           <p className="text-xs text-muted-foreground">
-            {"Wanzor Tatt. Todos los derechos reservados."}
+            {`${siteConfig.brandName}. Todos los derechos reservados.`}
           </p>
         </div>
       </div>
     </footer>
-  );
+  )
 }

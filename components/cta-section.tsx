@@ -1,6 +1,7 @@
 "use client"
 
 import { useScrollReveal } from "@/hooks/use-scroll-reveal"
+import { siteConfig } from "@/lib/site"
 
 export function CtaSection() {
   const { ref, isVisible } = useScrollReveal()
@@ -30,7 +31,7 @@ export function CtaSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Reserva tu llamada sin compromiso. Hablemos de donde estas, donde queres llegar, y como puedo ayudarte.
+          Reserva tu llamada sin compromiso. Hablemos de donde estas, donde queres llegar, y como puedo ayudarte a cobrar lo que vales.
         </p>
 
         <div
@@ -39,13 +40,17 @@ export function CtaSection() {
           }`}
         >
           <a
-            href="#"
+            href={siteConfig.bookingUrl || siteConfig.whatsappUrl}
+            target={siteConfig.bookingUrl ? undefined : "_blank"}
+            rel={siteConfig.bookingUrl ? undefined : "noopener noreferrer"}
             className="group relative overflow-hidden bg-accent text-accent-foreground px-10 py-4 text-sm font-bold uppercase tracking-widest transition-all hover:opacity-90"
           >
             <span className="relative z-10">Agendar llamada</span>
           </a>
           <a
-            href="#"
+            href={siteConfig.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-foreground/20 px-10 py-4 text-sm font-semibold uppercase tracking-widest text-foreground transition-all hover:bg-foreground hover:text-background"
           >
             Escribirme por WhatsApp

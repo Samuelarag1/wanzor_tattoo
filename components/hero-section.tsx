@@ -1,21 +1,20 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { useEffect, useState } from "react"
+import Image from "next/image"
+import { ChevronDown } from "lucide-react"
+import { siteConfig } from "@/lib/site"
 
 export function HeroSection() {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoaded(true), 300);
-    return () => clearTimeout(timer);
-  }, []);
+    const timer = setTimeout(() => setLoaded(true), 100)
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
-    <section
-      id="inicio"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-    >
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Film grain overlay */}
       <div
         className="pointer-events-none absolute inset-0 z-20 opacity-[0.03]"
@@ -39,9 +38,12 @@ export function HeroSection() {
 
       {/* Background image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/images/hero-mejorar.jpeg"
-          alt="Wanzor Tatt trabajando"
+        <Image
+          src={siteConfig.heroImage}
+          alt="Wanzor Tatt trabajando en su posicionamiento profesional para tatuadores"
+          fill
+          priority
+          sizes="100vw"
           className={`h-full w-full object-cover object-top transition-all duration-[2000ms] ${
             loaded ? "scale-100 opacity-40" : "scale-110 opacity-0"
           }`}
@@ -57,7 +59,7 @@ export function HeroSection() {
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Tatuajes Profesionales
+          Mentorias para Tatuadores
         </p>
 
         <h1
@@ -75,7 +77,8 @@ export function HeroSection() {
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Hay un patron detras de cada resultado
+          Mentoria 1 a 1 para tatuadores que ya saben tatuar y quieren cobrar mejor,
+          ordenar su marca y atraer clientes mas alineados con su nivel.
         </p>
 
         <a
@@ -97,5 +100,5 @@ export function HeroSection() {
         <ChevronDown className="h-5 w-5 text-muted-foreground animate-bounce" />
       </div>
     </section>
-  );
+  )
 }
