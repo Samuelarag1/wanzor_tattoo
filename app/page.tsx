@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
-// import { PainPointsSection } from "@/components/pain-points-section"
+import { PainPointsSection } from "@/components/pain-points-section"
 import { ImageRevealSection } from "@/components/image-reveal-section"
 import { WhatIDoSection } from "@/components/what-i-do-section"
 import { ServicesSection } from "@/components/services-section"
@@ -13,7 +13,6 @@ import { CtaSection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 import { WhatsappButton } from "@/components/whatsapp-button"
 import { HomePageShell } from "@/components/home-page-shell"
-import { SeoContentSection } from "@/components/seo-content-section"
 import { StructuredData } from "@/components/structured-data"
 import { getAbsoluteUrl, siteConfig } from "@/lib/site"
 
@@ -56,7 +55,7 @@ export default function Home() {
         <HeroSection />
         <ImageRevealSection />
         <WhatIDoSection />
-        {/* <PainPointsSection /> */}
+        <PainPointsSection />
         {/* <SeoContentSection /> */}
         <ManifestoSection />
         <ServicesSection />
