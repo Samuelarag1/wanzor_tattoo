@@ -8,25 +8,26 @@ import { siteConfig } from "@/lib/site"
 const aboutImages = [
   {
     src: '/me.png',
-    alt: "Wanzor Tatt trabajando en su consultoria para tatuadores",
-    caption: "Mentoria enfocada en posicionamiento, criterio y crecimiento real.",
+    alt: "Wanzor Tatt trabajando en su consultoría para tatuadores",
+    caption: "Mentoría enfocada en posicionamiento, criterio y crecimiento real.",
   },
   {
     src: '/profile-2.png',
     alt: "Wanzor Tatt tatuando y desarrollando su marca personal",
-    caption: "Experiencia real dentro del oficio, no teoria vacia.",
+    caption: "Experiencia real dentro del oficio, no teoría vacía.",
   },
   {
     src: '/tattoo.jpeg',
     alt: "Wanzor Tatt tatuando y desarrollando su marca personal",
-    caption: "Experiencia real dentro del oficio, no teoria vacia.",
+    caption: "Experiencia real dentro del oficio, no teoría vacía.",
   },
 ]
 
-const pillars = [
-  "Mentoria desde la experiencia de quien conoce el mundo del tatuaje por dentro.",
-  "Vision de marca, precios y clientes para tatuadores que ya tienen nivel tecnico.",
-  "Acompanamiento directo para tomar mejores decisiones y crecer con mas claridad.",
+const aboutParagraphs = [
+  "Mi nombre es Wanzor. Me dedico al tatuaje desde el 2015.",
+  "A lo largo del tiempo he desarrollado diferentes técnicas, estilos y maneras de ver la profesión, que creo que pueden ser de mucha utilidad para quienes estén interesados en formarse como artistas profesionales del tatuaje y para quienes quieran vivir de esto.",
+  "Después de una larga carrera apostando todos los días a esta profesión, me di cuenta de que no solo se trata del aspecto artístico. Una mente nutrida y un cuerpo sano es tan importante como una línea prolija o un relleno sólido.",
+  "No alcanza con tatuar bien. Para poder llevar tu trabajo al siguiente nivel necesitás conocimientos que parecen secundarios, pero no lo son. Ventas, marketing, comunicación, psicología, inteligencia artificial, mindfulness, agenda, organización... Estos son algunos de los temas que estudio y aplico cada día en mi marca personal, y con los que vamos a estar trabajando en la asesoría con tu caso.",
 ]
 
 export function AboutSection() {
@@ -47,38 +48,33 @@ export function AboutSection() {
         <div className={`transition-all duration-700 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}>
-          <p className="text-xs uppercase tracking-[0.4em] text-accent">
-            Sobre {siteConfig.brandName}
-          </p>
+          <p className="text-xs uppercase tracking-[0.4em] text-accent">Sobre mí</p>
           <h2
             id="about-title"
             className="mt-4 font-heading text-4xl font-bold uppercase tracking-tight text-foreground md:text-6xl"
           >
-            Un tatuador guiando a otros tatuadores a crecer mejor
+            No presumo premios porque no los tengo...
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-            {siteConfig.brandName} acompana a tatuadores que ya saben tatuar pero necesitan ordenar la
-            parte que no siempre se ensena: marca personal, precios, comunicacion,
-            posicionamiento y direccion profesional.
-          </p>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-            La idea de esta seccion es presentar autoridad de forma cercana, mostrar
-            rostro, recorrido y criterio. La imagen esta preparada para ir cambiando
-            fotos dentro del mismo marco y despues se puede reemplazar por retratos o
-            fotos reales de branding personal.
-          </p>
+          <blockquote className="mt-6 border-l-2 border-accent/60 pl-5">
+            <p className="text-base leading-relaxed text-foreground md:text-lg">
+              Muestro lo que hago todos los días, que es vivir del arte y para el arte.
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground md:text-lg">
+              Por eso lo enseño.
+            </p>
+          </blockquote>
 
           <div className="mt-8 space-y-4">
-            {pillars.map((pillar, index) => (
-              <div
-                key={pillar}
-                className={`border-l-2 border-accent/60 pl-5 text-sm leading-relaxed text-muted-foreground transition-all duration-700 ${
+            {aboutParagraphs.map((paragraph, index) => (
+              <p
+                key={paragraph}
+                className={`text-sm leading-relaxed text-muted-foreground transition-all duration-700 md:text-base ${
                   isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
                 }`}
                 style={{ transitionDelay: `${index * 120}ms` }}
               >
-                {pillar}
-              </div>
+                {paragraph}
+              </p>
             ))}
           </div>
         </div>

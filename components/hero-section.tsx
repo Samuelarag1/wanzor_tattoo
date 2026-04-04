@@ -59,7 +59,7 @@ export function HeroSection() {
             loaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
           }`}
         >
-          Mentorias para Tatuadores
+          Mentorías para tatuadores
         </p>
 
         <h1
@@ -77,8 +77,8 @@ export function HeroSection() {
             loaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
           }`}
         >
-          Mentoria 1 a 1 para tatuadores que ya saben tatuar y quieren cobrar mejor,
-          ordenar su marca y atraer clientes mas alineados con su nivel.
+          Mentoría 1 a 1 para tatuadores que ya saben tatuar y quieren cobrar mejor,
+          ordenar su marca y atraer clientes más alineados con su nivel.
         </p>
 
         <a
@@ -87,7 +87,7 @@ export function HeroSection() {
             loaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
           }`}
         >
-          Descubrir mas
+          Descubrir más
         </a>
       </div>
 

@@ -8,45 +8,51 @@ const levels = [
   {
     icon: Zap,
     name: "Kickstart",
+    duration: "45 min",
     tagline: "Empezar",
-    description: "Para tatuadores que necesitan ordenar las bases y dar el primer paso con direccion.",
+    description: "Para tatuadores que necesitan ordenar las bases y dar el primer paso con dirección.",
     launchPrice: 49,
     features: [
-      "Diagnostico de tu situacion actual.",
-      "Plan de accion inicial.",
-      "Estrategia de precios.",
+      "Diagnóstico de tu situación actual.",
       "Ordenamiento de marca.",
+      "Plan de acción inicial.",
     ],
     tier: 1,
   },
   {
     icon: Flame,
     name: "Momentum",
+    duration: "1 h",
     tagline: "Acelerar",
-    description: "Para quienes ya tatuan bien pero necesitan un sistema para escalar y atraer mejores clientes.",
+    description: "Para quienes ya tatúan a un buen nivel pero quieren profesionalizar su marca y escalar su negocio.",
     launchPrice: 99,
     features: [
-      "Plan de accion personalizado.",
+      "Todo lo del Kickstart.",
+      "Plan de acción personalizado.",
       "Estrategia de contenido.",
-      "Optimizacion de precios.",
-      "Sistema de captacion de clientes.",
-      "Seguimiento semanal.",
+      "Sistema de captación de clientes.",
+      "Estrategia de precios.",
+      "Rendimiento y optimización del tiempo.",
     ],
     tier: 2,
   },
   {
     icon: Crown,
     name: "Mastery",
-    tagline: "Nivel experto",
-    description: "El camino completo hacia convertirte en un tatuador de referencia en tu zona.",
+    duration: "1 h 30 min",
+    tagline: "Llegar a nivel experto",
+    description: "El camino para vivir del tatuaje y convertirte en un tatuador de referencia en tu zona.",
     launchPrice: 130,
     features: [
-      "Todo lo de Momentum.",
-      "Seguimiento continuo.",
+      "Todo lo del Kickstart y Momentum.",
+      "Seguimiento semanal.",
       "Estrategia avanzada de marca.",
-      "Posicionamiento como experto.",
-      "Mentoria ilimitada.",
-      "Acceso directo y prioritario.",
+      "Posicionamiento como profesional.",
+      "Uso de inteligencia artificial.",
+      "Mindset y enfoque.",
+      "Desarrollo de marketing y ventas.",
+      "Promociones en cursos y seminarios futuros.",
+      "Grupo de WhatsApp con tatuadores profesionales con pack Mastery.",
     ],
     tier: 3,
   },
@@ -70,22 +76,21 @@ export function ServicesSection() {
               headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Elige tu nivel
+            Elegí tu pack
           </p>
           <h2
             className={`mt-4 font-heading text-4xl font-bold uppercase tracking-tight text-foreground md:text-6xl lg:text-7xl transition-all duration-1000 delay-200 ${
               headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Niveles
+            Packs
           </h2>
           <p
             className={`mt-6 mx-auto max-w-lg text-base text-muted-foreground transition-all duration-700 delay-400 ${
               headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            3 caminos distintos para tatuadores que ya saben tatuar y ahora quieren
-            profesionalizar marca, precios y resultados.
+            Tres caminos para empezar, acelerar o llevar tu carrera a un nivel experto.
           </p>
         </div>
 
@@ -132,7 +137,7 @@ function LevelCard({
         {/* Tier label */}
         {isFeatured && (
           <div className="bg-accent text-accent-foreground px-4 py-2.5 text-center text-[10px] font-bold uppercase tracking-[0.3em]">
-            Mas popular
+            Más popular
           </div>
         )}
 
@@ -152,6 +157,9 @@ function LevelCard({
           {/* Name + tagline */}
           <h3 className="mt-8 font-heading text-2xl font-bold uppercase tracking-tight text-foreground md:text-3xl">
             {level.name}
+            <span className="ml-3 align-middle whitespace-nowrap text-base font-sans font-semibold normal-case tracking-normal text-accent md:text-lg">
+              {level.duration}
+            </span>
           </h3>
           <p className="mt-1 text-sm font-semibold uppercase tracking-widest text-accent">
             {level.tagline}
@@ -183,9 +191,6 @@ function LevelCard({
                 </p>
                 <p className="mt-2 text-base text-muted-foreground/75 line-through decoration-accent/50 decoration-2">
                   USD {originalPrice}
-                </p>
-                <p className="mt-2 text-[10px] uppercase tracking-[0.26em] text-accent">
-                  30% off
                 </p>
               </div>
             </div>

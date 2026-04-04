@@ -13,7 +13,7 @@ export function Footer() {
               {siteConfig.brandName}
             </p>
             <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
-              Mentoria para Tatuadores
+              Mentoría para tatuadores
             </p>
           </div>
 

@@ -22,7 +22,7 @@ export function CtaSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <span className="block">Estas listo</span>
+          <span className="block">¿Estás listo</span>
           <span className="block text-accent">{"para crecer?"}</span>
         </h2>
 
@@ -31,7 +31,7 @@ export function CtaSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          Reserva tu llamada sin compromiso. Hablemos de donde estas, donde queres llegar, y como puedo ayudarte a cobrar lo que vales.
+          Reserva tu llamada sin compromiso. Hablemos de dónde estás, dónde querés llegar y cómo puedo ayudarte a cobrar lo que valés.
         </p>
 
         <div

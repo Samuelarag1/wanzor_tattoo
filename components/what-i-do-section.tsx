@@ -26,7 +26,7 @@ export function WhatIDoSection() {
               headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            {"Que hago?"}
+            {"¿Qué hago?"}
           </h2>
         </div>
 
@@ -39,7 +39,7 @@ export function WhatIDoSection() {
           <p className="text-xl leading-relaxed text-muted-foreground md:text-2xl">
             Te ayudo a{" "}
             <span className="font-heading font-bold uppercase text-accent">
-              cobrar lo que vales
+              cobrar lo que valés
             </span>{" "}
             y{" "}
             <span className="font-heading font-bold uppercase text-accent">
@@ -50,15 +50,15 @@ export function WhatIDoSection() {
 
           <div className="mt-12 flex flex-col gap-6 md:flex-row md:justify-center md:gap-12">
             <StatBlock
-              number="1-1"
-              label="Asesorias personalizadas"
+              number="1 a 1"
+              label="Asesorías personalizadas"
               delay={400}
               visible={contentVisible}
             />
             <div className="hidden md:block w-px bg-border" />
             <StatBlock
               number="100%"
-              label="Metodos practicos y reales"
+              label="Métodos prácticos y reales"
               delay={600}
               visible={contentVisible}
             />

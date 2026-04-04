@@ -12,11 +12,11 @@ export function FaqSection() {
             id="faq-title"
             className="mt-4 font-heading text-4xl font-bold uppercase tracking-tight text-foreground md:text-6xl"
           >
-            Dudas comunes antes de empezar la mentoria
+            Dudas comunes antes de empezar la mentoría
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-            Esta seccion queda casi al final para resolver objeciones y reforzar la
-            decision antes del ultimo llamado a la accion.
+            Esta sección queda casi al final para resolver objeciones y reforzar la
+            decisión antes del último llamado a la acción.
           </p>
         </div>
 

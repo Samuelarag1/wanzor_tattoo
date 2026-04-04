@@ -36,10 +36,10 @@ export function ImageRevealSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block text-9xl">Tatuas bien</span>
+            <span className="block text-9xl">Tatuás bien</span>
             <span className="mt-2 block text-lg font-sans font-normal normal-case tracking-wide text-muted-foreground md:text-2xl">
     
-              <span className="font-akkurat-strong text-foreground text-2xl text-gray-300">PERO ESTAS DONDE QUERES?</span>
+              <span className="font-akkurat-strong text-foreground text-2xl text-gray-300">PERO NO ESTAS DONDE DEBERÍAS</span>
             </span>
           </h2>
         </div>

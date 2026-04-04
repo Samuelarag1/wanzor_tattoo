@@ -7,27 +7,27 @@ import { siteConfig } from "@/lib/site"
 
 const testimonials = [
   {
-    name: "Lucia M.",
+    name: "Lucía M.",
     role: "Fine line tattoo artist",
-    result: "Empece a cobrar mejor sin sentir culpa y ahora filtro mejor a mis clientes.",
+    result: "Empecé a cobrar mejor sin sentir culpa y ahora filtro mejor a mis clientes.",
     quote:
-      "Sentia que tatuaba bien pero mi negocio iba atrasado. Con la mentoria ordene mensajes, precios y contenido.",
+      "Sentía que tatuaba bien, pero mi negocio iba atrasado. Con la mentoría ordené mensajes, precios y contenido.",
     image: siteConfig.heroImage,
   },
   {
-    name: "Tomas R.",
+    name: "Tomás R.",
     role: "Blackwork tattoo artist",
-    result: "Pase de improvisar a tener un sistema claro para responder, vender y cerrar sesiones.",
+    result: "Pasé de improvisar a tener un sistema claro para responder, vender y cerrar sesiones.",
     quote:
-      "Lo mas valioso fue entender por que no estaba posicionando mi trabajo como correspondia. Ahora todo se siente mas profesional.",
+      "Lo más valioso fue entender por qué no estaba posicionando mi trabajo como correspondía. Ahora todo se siente más profesional.",
     image: siteConfig.secondaryImage,
   },
   {
     name: "Camila S.",
     role: "Tattoo studio owner",
-    result: "Mi perfil se ve mas premium y las consultas llegan mucho mas alineadas con mi estilo.",
+    result: "Mi perfil se ve más premium y las consultas llegan mucho más alineadas con mi estilo.",
     quote:
-      "La diferencia no fue solo en precios. Tambien gane direccion, foco y una marca mucho mas coherente.",
+      "La diferencia no fue solo en precios. También gané dirección, foco y una marca mucho más coherente.",
     image: siteConfig.heroImage,
   },
 ]
@@ -54,16 +54,16 @@ export function TestimonialsSection() {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}>
           <p className="text-xs uppercase tracking-[0.4em] text-accent">
-            Testimonios y casos de exito
+            Testimonios y casos de éxito
           </p>
           <h2
             id="testimonios-title"
             className="mt-4 font-heading text-4xl font-bold uppercase tracking-tight text-foreground md:text-6xl"
           >
-            Resultados que convierten tecnica en carrera
+            Resultados que convierten técnica en carrera
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            Mockeado por ahora, pero pensado para mostrar prueba social, cambio de
+            Está mockeado por ahora, pero pensado para mostrar prueba social, cambio de
             posicionamiento y avances concretos en precios, marca y clientes.
           </p>
         </div>
@@ -80,7 +80,7 @@ export function TestimonialsSection() {
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src={testimonial.image}
-                  alt={`Caso de exito mockeado de ${testimonial.name}`}
+                  alt={`Caso de éxito mockeado de ${testimonial.name}`}
                   fill
                   sizes="(max-width: 1024px) 100vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"

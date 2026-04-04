@@ -17,61 +17,65 @@ const problems = [
     icon: DollarSign,
     kicker: "Valor",
     problem: "Precios bajos",
-    symptom: "Tatuas con nivel, pero seguis cobrando desde la duda o desde lo que hace otro.",
-    backTitle: "Reordenamos como cobras",
-    solution: "Trabajamos precio, propuesta y forma de comunicar valor para que dejes de negociar desde la inseguridad.",
-    resultLabel: "Resultado",
-    result: "Mas criterio, menos regateo y un precio que acompana tu nivel real.",
+    symptom:
+      "El dinero es una idea, para poder haber más es necesario cambiar la manera de pensar. La mejor manera de aumentar tus ganancias es asegurándote de que das un buen servicio.",
+    backTitle: "Venderlo mejor",
+    solution: "Te ayudo a saber cómo hacerlo y venderlo mejor.",
+    resultLabel: "",
+    result: "",
   },
   {
     icon: Users,
     kicker: "Clientes",
     problem: "Falta de clientes",
-    symptom: "Hay semanas con silencio, consultas flojas o gente que nunca termina cerrando.",
-    backTitle: "Armamos un sistema de atraccion",
-    solution: "Ajustamos mensaje, filtro y seguimiento para que las consultas lleguen mejor calificadas.",
-    resultLabel: "Resultado",
-    result: "Menos desgaste en mensajes y mas conversaciones con chances reales de cerrar.",
+    symptom:
+      "No todos los clientes son para vos, y eso está bien. Pero hay muchísimos clientes que pueden ser tuyos si sabés enfocarte en lo importante.",
+    backTitle: "Encontrar tu nicho",
+    solution: "Te ayudo a encontrar tu nicho actual y sacarle el máximo provecho.",
+    resultLabel: "",
+    result: "",
   },
   {
     icon: Sparkles,
     kicker: "Marca",
-    problem: "Marca debil",
-    symptom: "Tu trabajo puede ser bueno, pero tu perfil no transmite una percepcion de valor clara.",
-    backTitle: "Le damos forma a tu posicionamiento",
-    solution: "Ordenamos identidad, contenido y tono para que la marca diga algo concreto y memorable.",
-    resultLabel: "Resultado",
-    result: "Un perfil mas solido, mas reconocible y mejor alineado con el cliente que queres.",
+    problem: "Marca débil",
+    symptom: "De nada sirve saber algo si no lo sabes comunicar.",
+    backTitle: "Subirla de nivel",
+    solution: "Te ayudo a encontrar tu estética, subirla de nivel y crear un branding profesional para tu marca.",
+    resultLabel: "",
+    result: "",
   },
   {
     icon: Target,
-    kicker: "Direccion",
+    kicker: "Enfoque",
     problem: "Trabajar menos y mejor",
-    symptom: "Estas produciendo mucho, pero no necesariamente te acerca al tipo de trabajo que queres hacer.",
-    backTitle: "Elegimos mejor en que enfocarte",
-    solution: "Definimos prioridades, tipo de cliente y oferta para sacar ruido y ganar direccion.",
-    resultLabel: "Resultado",
-    result: "Menos dispersion y mas energia puesta en decisiones que empujan de verdad.",
-  },
-  {
-    icon: Brain,
-    kicker: "Criterio",
-    problem: "Tecnica sin criterio",
-    symptom: "Sabes tatuar, pero todavia hay decisiones de negocio y posicionamiento que te frenan.",
-    backTitle: "Convertimos intuicion en sistema",
-    solution: "Bajamos dudas concretas a un metodo que puedas repetir cuando haya que decidir rapido.",
-    resultLabel: "Resultado",
-    result: "Mas claridad mental y una forma propia de resolver sin improvisar cada semana.",
+    symptom:
+      "Sentirse estancado o frustrado es parte del proceso. Es la parte en donde tenemos que empezar a hacer las cosas diferentes. Con una visión distinta.",
+    backTitle: "Optimizar tu tiempo",
+    solution: "Te ayudo a optimizar tu tiempo y rendir mejor.",
+    resultLabel: "",
+    result: "",
   },
   {
     icon: Shield,
-    kicker: "Confianza",
-    problem: "Miedo a exponerte",
-    symptom: "Te cuesta sostener precios, mostrarte mas o tomar decisiones por miedo a equivocarte.",
-    backTitle: "Creamos una base mas segura",
-    solution: "Te llevas procesos practicos para comunicarte, vender y mostrarte sin sentir que improvisas.",
-    resultLabel: "Resultado",
-    result: "Mas confianza operativa para avanzar con orden, incluso cuando hay incertidumbre.",
+    kicker: "Seguridad",
+    problem: "Miedo",
+    symptom: "Cuando empezás a trabajar con sistemas y estructuras, el miedo y la ansiedad desaparecen.",
+    backTitle: "Operar con más seguridad",
+    solution: "Operar con más seguridad y tranquilidad es clave para la abundancia y prosperidad de tu negocio.",
+    resultLabel: "",
+    result: "",
+  },
+  {
+    icon: Brain,
+    kicker: "Mentalidad",
+    problem: "Desorden mental",
+    symptom: "No todo es ganar, a veces es saber cómo no equivocarte tanto.",
+    backTitle: "Ordenar tu mente",
+    solution:
+      "Una mente positiva y ordenada es fundamental para evitar el autosabotaje y lograr una carrera profesional en subida.",
+    resultLabel: "",
+    result: "",
   },
 ] as const
 
@@ -96,31 +100,31 @@ export function PainPointsSection() {
               headerVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
             }`}
           >
-            Que resuelvo
+            Qué resuelvo
           </p>
           <h2
             className={`mt-4 font-heading text-4xl font-bold uppercase tracking-tight text-foreground md:text-6xl lg:text-7xl transition-all duration-1000 delay-150 ${
               headerVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             }`}
           >
-            Tatuas bien.
-            <span className="block text-accent">El negocio acompana?</span>
+            Tatuás bien.
+            <span className="block text-accent">¿El negocio acompaña?</span>
           </h2>
           <p
             className={`mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground transition-all duration-700 delay-300 md:text-lg ${
               headerVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
             }`}
           >
-            Aca estan seis bloqueos comunes. Cada card te muestra de frente lo que suele frenar el crecimiento
-            y, del otro lado, como lo trabajamos en la mentoria.
+            Acá están seis bloqueos comunes. Cada card te muestra de frente lo que suele frenar el crecimiento
+            y, del otro lado, cómo lo trabajamos en la mentoría.
           </p>
         </div>
 
         <p className="mt-6 text-center text-[10px] uppercase tracking-[0.34em] text-muted-foreground md:hidden">
-          Toca una card para girarla
+          Tocá una card para girarla
         </p>
         <p className="mt-6 hidden text-center text-[10px] uppercase tracking-[0.34em] text-muted-foreground md:block">
-          Hover o click para ver mas
+          Hover o clic para ver más
         </p>
 
         <div className="mt-16 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -165,7 +169,7 @@ function ProblemCard({
         type="button"
         onClick={onToggle}
         aria-pressed={isActive}
-        aria-label={`Ver mas informacion sobre ${item.problem}`}
+        aria-label={`Ver más información sobre ${item.problem}`}
         className="group block h-full w-full touch-manipulation text-left focus-visible:outline-none"
       >
         <div
@@ -217,12 +221,14 @@ function ProblemCard({
               {item.solution}
             </p>
 
-            <div className="mt-auto border-t border-white/10 pt-5">
-              <p className="text-[10px] uppercase tracking-[0.34em] text-accent">{item.resultLabel}</p>
-              <p className="mt-3 text-sm leading-relaxed text-foreground/90">
-                {item.result}
-              </p>
-            </div>
+            {item.resultLabel && item.result ? (
+              <div className="mt-auto border-t border-white/10 pt-5">
+                <p className="text-[10px] uppercase tracking-[0.34em] text-accent">{item.resultLabel}</p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/90">
+                  {item.result}
+                </p>
+              </div>
+            ) : null}
           </div>
         </div>
       </button>

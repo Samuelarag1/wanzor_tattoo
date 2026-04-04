@@ -68,7 +68,7 @@ export function CinematicIntro({ onComplete }: CinematicIntroProps) {
                 : "translate-y-0 opacity-100"
             }`}
           >
-            <span className="text-foreground">{"Estas listo"}</span>
+            <span className="text-foreground">{"¿Estás listo"}</span>
           </span>
         </h1>
 

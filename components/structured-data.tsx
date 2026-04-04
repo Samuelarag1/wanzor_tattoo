@@ -22,19 +22,19 @@ export function StructuredData() {
           name: "Argentina",
         },
         knowsAbout: [
-          "Mentoria para tatuadores",
-          "Consultoria para tatuadores",
+          "Mentoría para tatuadores",
+          "Consultoría para tatuadores",
           "Marca personal para tatuadores",
           "Precios para tatuadores",
-          "Captacion de clientes para tatuadores",
+          "Captación de clientes para tatuadores",
         ],
         sameAs: siteConfig.instagramUrl ? [siteConfig.instagramUrl] : undefined,
       },
       {
         "@type": "Service",
         "@id": `${siteConfig.siteUrl}#service`,
-        name: "Mentoria 1 a 1 para tatuadores",
-        serviceType: "Mentoria para tatuadores",
+        name: "Mentoría 1 a 1 para tatuadores",
+        serviceType: "Mentoría para tatuadores",
         provider: {
           "@id": `${siteConfig.siteUrl}#business`,
         },
@@ -72,7 +72,7 @@ export function StructuredData() {
         "@type": "WebPage",
         "@id": `${siteConfig.siteUrl}#webpage`,
         url: siteConfig.siteUrl,
-        name: "Mentoria para tatuadores | Wanzor Tatt",
+        name: "Mentoría para tatuadores | Wanzor Tatt",
         isPartOf: {
           "@id": `${siteConfig.siteUrl}#website`,
         },

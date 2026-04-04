@@ -5,11 +5,11 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 const lines = [
   { text: "Tus tattoos no son el problema.", emphasis: false },
   { text: "El problema es el sistema que los rodea.", emphasis: true },
-  { text: "No es cuantos seguidores tenes.", emphasis: false },
-  { text: "Es cuantos clientes te escriben.", emphasis: true },
-  { text: "No es cuanto cobras.", emphasis: false },
-  { text: "Es cuanto vales.", emphasis: true },
-  { text: "Hay un patron detras de cada resultado.", emphasis: false },
+  { text: "No es cuántos seguidores tenés.", emphasis: false },
+  { text: "Es cuántos clientes te escriben.", emphasis: true },
+  { text: "No es cuánto cobrás.", emphasis: false },
+  { text: "Es cuánto valés.", emphasis: true },
+  { text: "Hay un sistema detrás de cada resultado.", emphasis: false },
   { text: "Mejorar no es casualidad.", emphasis: true },
 ]
 

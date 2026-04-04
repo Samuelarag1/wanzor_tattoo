@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site"
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
-  { label: "Que resuelvo", href: "#mentoria" },
+  { label: "Qué resuelvo", href: "#mentoria" },
   { label: "Servicios", href: "#servicios" },
   { label: "Contacto", href: "#contacto" },
 ]
@@ -71,7 +71,7 @@ export function Navbar() {
           <button
             onClick={() => setIsMobileOpen(!isMobileOpen)}
             className="relative z-[60] flex h-10 w-10 flex-col items-center justify-center gap-[5px] md:hidden"
-            aria-label={isMobileOpen ? "Cerrar menu" : "Abrir menu"}
+            aria-label={isMobileOpen ? "Cerrar menú" : "Abrir menú"}
           >
             <span
               className={`block h-[1.5px] w-6 bg-foreground transition-all duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] origin-center ${
@@ -186,7 +186,7 @@ export function Navbar() {
               {siteConfig.brandName}
             </span>
             <span className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              Tatuajes Profesionales
+              Tatuajes profesionales
             </span>
           </div>
         </div>

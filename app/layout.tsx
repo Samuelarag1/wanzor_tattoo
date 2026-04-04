@@ -69,7 +69,7 @@ export const metadata: Metadata = {
         url: getAbsoluteUrl(siteConfig.heroImage),
         width: 1200,
         height: 630,
-        alt: "Wanzor Tatt, mentoria para tatuadores",
+        alt: "Wanzor Tatt, mentoría para tatuadores",
       },
     ],
   },
