@@ -17,10 +17,10 @@ const problems = [
     icon: DollarSign,
     kicker: "Valor",
     problem: "Precios bajos",
-    symptom:
+    solution:
       "El dinero es una idea, para poder haber más es necesario cambiar la manera de pensar. La mejor manera de aumentar tus ganancias es asegurándote de que das un buen servicio.",
     backTitle: "Venderlo mejor",
-    solution: "Te ayudo a saber cómo hacerlo y venderlo mejor.",
+    symptom: "Te ayudo a saber cómo hacerlo y venderlo mejor.",
     resultLabel: "",
     result: "",
   },
@@ -28,10 +28,10 @@ const problems = [
     icon: Users,
     kicker: "Clientes",
     problem: "Falta de clientes",
-    symptom:
+    solution:
       "No todos los clientes son para vos, y eso está bien. Pero hay muchísimos clientes que pueden ser tuyos si sabés enfocarte en lo importante.",
     backTitle: "Encontrar tu nicho",
-    solution: "Te ayudo a encontrar tu nicho actual y sacarle el máximo provecho.",
+    symptom: "Encontrar tu nicho actual y sacarle el máximo provecho.",
     resultLabel: "",
     result: "",
   },
@@ -49,10 +49,10 @@ const problems = [
     icon: Target,
     kicker: "Enfoque",
     problem: "Trabajar menos y mejor",
-    symptom:
+    solution:
       "Sentirse estancado o frustrado es parte del proceso. Es la parte en donde tenemos que empezar a hacer las cosas diferentes. Con una visión distinta.",
     backTitle: "Optimizar tu tiempo",
-    solution: "Te ayudo a optimizar tu tiempo y rendir mejor.",
+    symptom: "Podes optimizar tu tiempo y rendir mejor.",
     resultLabel: "",
     result: "",
   },

@@ -88,7 +88,7 @@ export function TestimonialsSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-1 border border-accent/30 bg-background/70 px-3 py-2 text-[10px] uppercase tracking-[0.3em] text-accent backdrop-blur">
                   <Star className="h-3 w-3 fill-current" />
-                  Caso mockeado
+                  Caso de éxito
                 </div>
               </div>
 
