@@ -77,8 +77,7 @@ export function HeroSection() {
             loaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
           }`}
         >
-          Mentoría 1 a 1 para tatuadores que ya saben tatuar y quieren cobrar mejor,
-          ordenar su marca y atraer clientes más alineados con su nivel.
+          LLamadas 1 a 1 para tatuadores que quieran organizar su marca, aumentar sus ganancias y subir su nivel.
         </p>
 
         <a

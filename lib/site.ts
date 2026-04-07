@@ -24,7 +24,7 @@ export const siteConfig = {
   siteUrl: (process.env.NEXT_PUBLIC_SITE_URL || defaultSiteUrl).replace(/\/$/, ""),
   instagramUrl: process.env.NEXT_PUBLIC_INSTAGRAM_URL,
   bookingUrl: process.env.NEXT_PUBLIC_BOOKING_URL,
-  whatsappUrl: process.env.NEXT_PUBLIC_WHATSAPP_URL || "https://wa.me/5491100000000",
+  whatsappUrl: process.env.NEXT_PUBLIC_WHATSAPP_URL || "https://wa.me/5492804354465",
   heroImage: "/images/hero-mejorar.jpeg",
   secondaryImage: "/images/hero-tatuas.jpeg",
 } as const
@@ -43,15 +43,15 @@ export const seoFaqs = [
   {
     question: "¿La mentoría ayuda a cobrar mejor por mis tatuajes?",
     answer:
-      "Sí. Uno de los focos es dejar de cobrar por inseguridad o desorden y empezar a sostener precios alineados con tu nivel, tu estilo y el tipo de cliente que querés atraer.",
+      "Sí. Uno de los focos principales es elevar tus presupuestos y empezar a sostener precios alineados con tu nivel, tu estilo y el tipo de cliente que querés atraer.",
   },
   {
     question: "¿Es una mentoría grupal o personalizada?",
     answer:
-      "La propuesta está orientada a mentorías personalizadas para bajar la estrategia a tu realidad, tu momento profesional y tus objetivos como tatuador.",
+      "La propuesta está orientada a mentorías individuales con estrategias personalizadas para mejorar tu carrera como profesional y lograr tus objetivos como tatuador.",
   },
   {
-    question: "¿Sirve si ya tatúo bien, pero no logro crecer?",
+    question: "¿Me sirve si ya tengo experiencia tatuando?",
     answer:
       "Sí. Justamente esta página apunta a tatuadores que ya saben tatuar y necesitan mejorar el negocio que rodea a su trabajo: marca, ventas, mensajes, posicionamiento y enfoque.",
   },

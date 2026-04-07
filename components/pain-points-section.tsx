@@ -20,7 +20,7 @@ const problems = [
     solution:
       "El dinero es una idea, para poder haber más es necesario cambiar la manera de pensar. La mejor manera de aumentar tus ganancias es asegurándote de que das un buen servicio.",
     backTitle: "Venderlo mejor",
-    symptom: "Te ayudo a saber cómo hacerlo y venderlo mejor.",
+    symptom: "Te ayudo a mejorar tu servicio y venderlo mejor.",
     resultLabel: "",
     result: "",
   },
@@ -50,7 +50,7 @@ const problems = [
     kicker: "Enfoque",
     problem: "Trabajar menos y mejor",
     solution:
-      "Sentirse estancado o frustrado es parte del proceso. Es la parte en donde tenemos que empezar a hacer las cosas diferentes. Con una visión distinta.",
+      "Sentirse estancado o frustrado es parte del proceso. Es la parte en donde tenemos que empezar a hacer las cosas diferentes.",
     backTitle: "Optimizar tu tiempo",
     symptom: "Podes optimizar tu tiempo y rendir mejor.",
     resultLabel: "",
@@ -100,15 +100,15 @@ export function PainPointsSection() {
               headerVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
             }`}
           >
-            Qué resuelvo
+            ¿Qué resuelvo?
           </p>
           <h2
             className={`mt-4 font-heading text-4xl font-bold uppercase tracking-tight text-foreground md:text-6xl lg:text-7xl transition-all duration-1000 delay-150 ${
               headerVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             }`}
           >
-            Tatuás bien.
-            <span className="block text-accent">¿El negocio acompaña?</span>
+            El problema no es el precio
+            <span className="block text-accent text-4xl">Es el sistema que lo rodea</span>
           </h2>
           <p
             className={`mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground transition-all duration-700 delay-300 md:text-lg ${

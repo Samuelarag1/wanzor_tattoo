@@ -24,10 +24,10 @@ const aboutImages = [
 ]
 
 const aboutParagraphs = [
-  "Mi nombre es Wanzor. Me dedico al tatuaje desde el 2015.",
+  "Mi nombre es Juan Manuel. Me dedico al tatuaje desde el 2015.",
   "A lo largo del tiempo he desarrollado diferentes técnicas, estilos y maneras de ver la profesión, que creo que pueden ser de mucha utilidad para quienes estén interesados en formarse como artistas profesionales del tatuaje y para quienes quieran vivir de esto.",
-  "Después de una larga carrera apostando todos los días a esta profesión, me di cuenta de que no solo se trata del aspecto artístico. Una mente nutrida y un cuerpo sano es tan importante como una línea prolija o un relleno sólido.",
-  "No alcanza con tatuar bien. Para poder llevar tu trabajo al siguiente nivel necesitás conocimientos que parecen secundarios, pero no lo son. Ventas, marketing, comunicación, psicología, inteligencia artificial, mindfulness, agenda, organización... Estos son algunos de los temas que estudio y aplico cada día en mi marca personal, y con los que vamos a estar trabajando en la asesoría con tu caso.",
+  "Después de una larga carrera apostando a esta profesión, me di cuenta de que no solo se trata del aspecto artístico. Una mente nutrida y un cuerpo sano es tan importante como una línea prolija o un relleno sólido.",
+  "No alcanza con tatuar bien. Para poder llevar tu trabajo al siguiente nivel necesitás conocimientos que parecen secundarios, pero no lo son. Ventas, marketing, comunicación, psicología, inteligencia artificial, agenda, organización... Estos son algunos de los temas que aplico cada día en mi marca personal, y con los que vamos a estar trabajando en la asesoría con tu caso.",
 ]
 
 export function AboutSection() {
