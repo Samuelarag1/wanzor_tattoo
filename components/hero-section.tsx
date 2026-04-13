@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 import { ChevronDown } from "lucide-react"
 
-const heroImageSrc = "/hero.PNG"
+const heroImageSrc = "/hero.png"
 
 export function HeroSection() {
   const [loaded, setLoaded] = useState(false)

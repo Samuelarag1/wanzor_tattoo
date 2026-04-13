@@ -5,7 +5,7 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 export function ImageRevealSection() {
   const { ref, isVisible } = useScrollReveal({ threshold: 0.2 })
-  const imageSrc = "/tatuas_bien.PNG"
+  const imageSrc = "/tatuas_bien.png"
 
   return (
     <section className="relative py-0 overflow-hidden">
