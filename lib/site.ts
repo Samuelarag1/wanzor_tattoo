@@ -22,9 +22,10 @@ export const siteConfig = {
     "mentoría 1 a 1 para tatuadores",
   ],
   siteUrl: (process.env.NEXT_PUBLIC_SITE_URL || defaultSiteUrl).replace(/\/$/, ""),
-  instagramUrl: process.env.NEXT_PUBLIC_INSTAGRAM_URL,
+  instagramUrl: process.env.NEXT_PUBLIC_INSTAGRAM_URL || 'https://www.instagram.com/wanzor.tatt/',
   bookingUrl: process.env.NEXT_PUBLIC_BOOKING_URL,
   whatsappUrl: process.env.NEXT_PUBLIC_WHATSAPP_URL || "https://wa.me/5492804354465",
+  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "Asesorías.wanzortatt@gmail.com",
   heroImage: "/images/hero-mejorar.jpeg",
   secondaryImage: "/images/hero-tatuas.jpeg",
 } as const

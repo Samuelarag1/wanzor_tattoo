@@ -5,6 +5,7 @@ import { siteConfig } from "@/lib/site"
 
 export function CtaSection() {
   const { ref, isVisible } = useScrollReveal()
+  const contactEmailHref = `mailto:${encodeURIComponent(siteConfig.contactEmail)}`
 
   return (
     <section id="contacto" className="relative py-32 overflow-hidden">
@@ -56,6 +57,20 @@ export function CtaSection() {
             Escribirme por WhatsApp
           </a>
         </div>
+
+        <p
+          className={`mt-6 text-sm text-muted-foreground transition-all duration-700 delay-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
+          Mail para asesorías:{" "}
+          <a
+            href={contactEmailHref}
+            className="font-medium text-foreground transition-colors hover:text-accent"
+          >
+            {siteConfig.contactEmail}
+          </a>
+        </p>
       </div>
     </section>
   )
