@@ -99,9 +99,7 @@ export function ServicesSection() {
         </div>
 
         <p
-          className={`mt-10 mx-auto max-w-4xl text-center text-sm leading-relaxed text-muted-foreground transition-all duration-700 delay-500 ${
-            headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
+          className={`mt-10 mx-auto max-w-4xl text-center text-sm leading-relaxed text-muted-foreground transition-all duration-700 delay-500`}
         >
           Con todos los packs se incluye un PDF entregable en donde se detallarán los problemas detectados y se especificarán los planes de acción para solucionarlos.
         </p>
