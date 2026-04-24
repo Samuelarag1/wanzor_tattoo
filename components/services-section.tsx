@@ -8,7 +8,7 @@ const levels = [
   {
     icon: Zap,
     name: "Kickstart",
-    duration: "45 min",
+    duration: "1h 15 min",
     tagline: "Empezar",
     description: "Para tatuadores que necesitan ordenar las bases y dar el primer paso con dirección.",
     launchPrice: 49,
@@ -22,7 +22,7 @@ const levels = [
   {
     icon: Flame,
     name: "Momentum",
-    duration: "1 h",
+    duration: "2hs 15min",
     tagline: "Acelerar",
     description: "Para quienes ya tatúan a un buen nivel pero quieren profesionalizar su marca y escalar su negocio.",
     launchPrice: 99,
@@ -38,9 +38,9 @@ const levels = [
   {
     icon: Crown,
     name: "Mastery",
-    duration: "1 h 30 min",
+    duration: "2hs 30 min",
     tagline: "Llegar a nivel experto",
-    description: "El camino para vivir del tatuaje y convertirte en un tatuador de referencia en tu zona.",
+    description: "Dos llamadas de 2 horas y media c/u con una pausa de 10 días y con seguimiento.",
     launchPrice: 130,
     features: [
       "Todo lo del Kickstart y Momentum.",
