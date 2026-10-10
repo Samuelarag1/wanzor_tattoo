@@ -59,7 +59,7 @@ export function HeroSection() {
             loaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
           }`}
         >
-          Mentorías para tatuadores
+          Academia digital para tatuadores
         </p>
 
         <h1
@@ -77,16 +77,16 @@ export function HeroSection() {
             loaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
           }`}
         >
-          LLamadas 1 a 1 para tatuadores que quieran organizar su marca, aumentar sus ganancias y subir su nivel.
+          Tres niveles de formación para ordenar tu marca, subir tu nivel técnico y construir una carrera rentable.
         </p>
 
         <a
-          href="#mentoria"
+          href="#academia"
           className={`mt-12 inline-flex items-center justify-center border border-accent/40 bg-accent/90 px-8 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-accent-foreground shadow-[0_18px_50px_rgba(214,176,76,0.18)] transition-all duration-700 delay-[600ms] hover:bg-accent ${
             loaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
           }`}
         >
-          Descubrir más
+          Conocer Academia
         </a>
       </div>
 
