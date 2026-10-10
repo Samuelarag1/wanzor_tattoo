@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next"
 import { Oswald } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { getAbsoluteUrl, siteConfig } from "@/lib/site"
-import "./globals.css"
+import "../globals.css"
 
 const oswald = Oswald({
   subsets: ["latin"],

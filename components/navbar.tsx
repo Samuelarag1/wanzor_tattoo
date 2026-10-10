@@ -1,13 +1,15 @@
 "use client"
 
 import { useState, useEffect, useCallback } from "react"
+import Link from "next/link"
 import { siteConfig } from "@/lib/site"
 
 const navLinks = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Qué resuelvo", href: "#mentoria" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Inicio", href: "/" },
+  { label: "Academia", href: "/academia" },
+  { label: "Mi historia", href: "/mi-historia" },
+  { label: "Portafolio", href: "/portafolio" },
+  { label: "Contacto", href: "/contacto" },
 ]
 
 export function Navbar() {
@@ -42,35 +44,39 @@ export function Navbar() {
         }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <a href="#inicio" className="font-heading text-2xl font-bold tracking-wider text-foreground uppercase">
+          <Link href="/" className="font-heading text-2xl font-bold tracking-wider text-foreground uppercase">
             {siteConfig.brandName}
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-8 lg:flex">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="relative text-sm uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground after:absolute after:bottom-[-4px] after:left-0 after:h-px after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href={siteConfig.bookingUrl || "#contacto"}
-              target={siteConfig.bookingUrl ? "_blank" : undefined}
-              rel={siteConfig.bookingUrl ? "noopener noreferrer" : undefined}
+            <Link
+              href="/login"
+              className="text-sm uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Ingresar
+            </Link>
+            <Link
+              href="/academia"
               className="bg-accent text-accent-foreground px-5 py-2 text-xs font-semibold uppercase tracking-widest transition-all hover:opacity-90"
             >
-              Agendar
-            </a>
+              Ver Academia
+            </Link>
           </div>
 
           {/* Mobile Toggle - Custom animated hamburger */}
           <button
             onClick={() => setIsMobileOpen(!isMobileOpen)}
-            className="relative z-[60] flex h-10 w-10 flex-col items-center justify-center gap-[5px] md:hidden"
+            className="relative z-[60] flex h-10 w-10 flex-col items-center justify-center gap-[5px] lg:hidden"
             aria-label={isMobileOpen ? "Cerrar menú" : "Abrir menú"}
           >
             <span
@@ -94,7 +100,7 @@ export function Navbar() {
 
       {/* Mobile Fullscreen Menu */}
       <div
-        className={`fixed inset-0 z-40 md:hidden transition-all duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] ${
+        className={`fixed inset-0 z-40 lg:hidden transition-all duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] ${
           isMobileOpen ? "pointer-events-auto" : "pointer-events-none"
         }`}
       >
@@ -121,7 +127,7 @@ export function Navbar() {
         <div className="relative z-10 flex h-full flex-col justify-center px-10">
           <nav className="flex flex-col gap-2">
             {navLinks.map((link, i) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={closeMobile}
@@ -142,7 +148,7 @@ export function Navbar() {
                   {link.label}
                 </span>
                 <span className="h-px flex-1 bg-border/40 transition-all duration-500 group-hover:bg-accent/40" />
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -158,16 +164,21 @@ export function Navbar() {
               transitionDelay: isMobileOpen ? "600ms" : "0ms",
             }}
           >
-            <a
-              href={siteConfig.bookingUrl || "#contacto"}
+            <Link
+              href="/academia"
               onClick={closeMobile}
-              target={siteConfig.bookingUrl ? "_blank" : undefined}
-              rel={siteConfig.bookingUrl ? "noopener noreferrer" : undefined}
               className="inline-flex w-full items-center justify-center gap-3 bg-accent text-accent-foreground py-4 text-sm font-bold uppercase tracking-[0.2em] transition-all hover:opacity-90"
             >
-              Agendar llamada
+              Ver Academia
               <span className="text-lg">{"→"}</span>
-            </a>
+            </Link>
+            <Link
+              href="/login"
+              onClick={closeMobile}
+              className="mt-3 inline-flex w-full items-center justify-center border border-foreground/20 py-4 text-sm font-bold uppercase tracking-[0.2em] text-foreground"
+            >
+              Ingresar
+            </Link>
           </div>
 
           {/* Brand footer in mobile menu */}
